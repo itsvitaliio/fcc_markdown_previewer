@@ -1,0 +1,41 @@
+.Card {
+    border: 3px solid #eff5ff;
+    width: 100%;
+    border-radius: 6vh;
+    padding-top: .5%;
+    padding-bottom: 2.5%;
+    margin: 1rem;
+    box-shadow: 0 0 1vw darkslategray;
+  }
+  
+  .Card-header {
+    display: block;
+    border-radius: 6vh;
+    padding: 1.5%;
+    background: lightpink;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  .Card-header-title {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .Card-header-circles span {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+  }
+  
+  @media screen and (orientation: portrait) {
+    .Card {
+      width: 95%;
+      padding-bottom: 6.5%;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.Footer {
+    text-align: center;
+    background: pink;
+    padding: 5% 0;
+    color: white;
+    font-size: 4vh;
+  }
+  
+  .Footer-link {
+    text-decoration: none;
+    color: 4vh;
+    border-bottom: .1vh solid transparent;
+    transition: all 0.3s ease-out;
+  }
+  .Footer-link a{
+      color: white;
+      text-decoration: underline;
+  }
+  @media screen and (orientation: landscape) {
+    .Footer {
+        padding: 2.5% 0;
+      }
+  }

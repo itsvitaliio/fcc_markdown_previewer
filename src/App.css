@@ -1,0 +1,90 @@
+.App-title {
+  text-align: center;
+  margin: 0;
+  padding: 2.5% 0;
+  background: pink;
+  color: #eff5ff;
+  -webkit-text-stroke: .1vh red;
+  text-transform: uppercase;
+}
+.App-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#editor {
+  display: block;
+  margin: 0 auto;
+  overflow-y: auto;
+  color: lightcoral;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5% 0;
+  width: 100%;
+  height: 70vh;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+#preview {
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  padding: 5%;
+  height: 70vh;
+  background: #fff;
+}
+
+/* markdown styles */
+#preview h1,
+#preview h2 {
+  border-bottom: .1vh solid lightcoral;
+}
+
+#preview code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background: lightcoral;
+  padding: 2.5% 0;
+  color: white;
+  border-radius: 6vh;
+}
+
+#preview pre {
+  background: lightcoral;
+  padding: 2.5% 0;
+  overflow: auto;
+  color: white;
+  border-radius: 6vh;
+}
+
+#preview blockquote {
+  border-left: .1vh solid lightcoral;
+  padding: 0 2.5%;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+#preview td,
+#preview th {
+  border: 1px solid lightcoral;
+  padding: 2.5% 5%;
+}
+
+@media screen and (orientation: portrait) {
+  .App-title {
+    padding: 10% 0;
+  }
+  .App-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
